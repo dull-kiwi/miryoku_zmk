@@ -17,9 +17,9 @@ U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo 
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp DOWN,          &kp RIGHT,         U_NA,              U_NA,              U_NA,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp UP,            &kp LEFT,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      &kp RIGHT,         U_NA,              U_NA,              U_NA,             \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         U_NA,              \
+U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              &kp PG_DN,         &kp PG_UP,         U_NA,              &kp END,           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp INS,           &kp HOME,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE \
