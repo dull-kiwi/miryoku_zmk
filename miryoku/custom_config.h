@@ -11,8 +11,8 @@ U_NP,              U_NP,              &kp ESC,           U_LT(U_FFXIV_ACT1, SPAC
 
 #define MIRYOKU_LAYER_FFXIV_ACT1 \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp NUM_4, \
-&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp NUM_7, \
-&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_8,         &kp NUM_9,         &kp NUM_0,         &kp MINUS, \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_5,         &kp NUM_6,         &kp NUM_7,         &kp NUM_8, \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_9,         &kp NUM_0,         &kp MINUS,         &kp EQUAL, \
 &trans,            &trans,            &trans,            &trans,            U_NP,              &trans,            &trans,            &trans,            &trans,            &trans
 #define MIRYOKU_LAYERMAPPING_FFXIV_ACT1 MIRYOKU_MAPPING
 
