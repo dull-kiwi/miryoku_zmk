@@ -60,7 +60,7 @@ on:
       branches:
         description: 'branches'
         required: false
-        default: 'default'
+        default: 'zmkfirmware/zmk/v0.3-branch'
       modules:
         description: 'modules'
         required: false
