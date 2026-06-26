@@ -1,8 +1,28 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define MIRYOKU_CLIPBOARD_WIN
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+// final fantasy layers ============================================================================================================================================================================
+#define MIRYOKU_LAYER_CUSTOM \
+&kp Q,             &kp W,             &kp F,             &kp P,                                &kp B,                                &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,   \
+&kp A,             &kp R,             &kp S,             &kp T,                                &kp G,                                &kp M,             &kp N,             &kp E,             &kp I,             &kp O,     \
+&kp Z,             &kp X,             &kp C,             &kp D,                                &kp V,                                &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH, \
+U_NP,              U_NP,              &kp ESC,           U_LT(U_FFXIV_ACT1, SPACE),            U_LT(U_FFXIV_ACT2, SPACE),           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+#define MIRYOKU_LAYERMAPPING_CUSTOM MIRYOKU_MAPPING
+
+#define MIRYOKU_LAYER_FFXIV_ACT1 \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp NUM_4, \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp NUM_7, \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp NUM_8,         &kp NUM_9,         &kp NUM_0,         &kp MINUS, \
+&trans,            &trans,            &trans,            &trans,            U_NP,              &trans,            &trans,            &trans,            &trans,            &trans
+#define MIRYOKU_LAYERMAPPING_FFXIV_ACT1 MIRYOKU_MAPPING
+
+#define MIRYOKU_LAYER_FFXIV_ACT2 \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,  \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp COLON, \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp EXCL,          &kp AT,            &kp HASH,          &kp TILDE, \
+&trans,            &trans,            &trans,            U_NP,              &trans,            &trans,            &trans,            &trans,            &trans,            &trans
+#define MIRYOKU_LAYERMAPPING_FFXIV_ACT2 MIRYOKU_MAPPING
+// final fantasy layers ============================================================================================================================================================================
 
 #define MIRYOKU_LAYER_EXTRA \
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -17,43 +37,43 @@ U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo 
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,             \
+U_NA,              &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         U_NA,              \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              &kp PG_DN,         &kp PG_UP,         &kp HOME,          &kp END,           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp INS,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
+// todo: approach to switching into the ffxiv "custom" layer via mouse layer top-left key
 #define MIRYOKU_ALTERNATIVES_MOUSE \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MS_D,            U_MS_R,            U_CPY,             U_CUT,             U_UND,             \
+&to U_CUSTOM,      &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MS_D,            U_MS_R,            U_CPY,             U_CUT,             U_UND,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_NA,              U_NA,              U_NA,              U_NA,            \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_MS_U,            U_MS_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
-// Technikable
-#if defined (MIRYOKU_KEYBOARD_TECHNIKABLE)
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,     "Base") \
+MIRYOKU_X(EXTRA,    "Extra") \
+MIRYOKU_X(TAP,      "Tap") \
+MIRYOKU_X(BUTTON,   "Button") \
+MIRYOKU_X(NAV,      "Nav") \
+MIRYOKU_X(MOUSE,    "Mouse") \
+MIRYOKU_X(MEDIA,    "Media") \
+MIRYOKU_X(NUM,      "Num") \
+MIRYOKU_X(SYM,      "Sym") \
+MIRYOKU_X(FUN,      "Fun") \
+MIRYOKU_X(CUSTOM,   "FFXIV") \
+MIRYOKU_X(FFXIV_ACT1, "FFXIV Act1") \
+MIRYOKU_X(FFXIV_ACT2, "FFXIV Act2")
 
-#define MIRYOKU_MAPPING_EXTENDED_THUMBS
-#define MIRYOKU_KLUDGE_DOUBLETAPBOOT
-#define XXX &none
-
-#define MIRYOKU_LAYERMAPPING_EXTRA(\
-K00, K01, K02, K03, K04,           K05, K06, K07, K08, K09, \
-K10, K11, K12, K13, K14,           K15, K16, K17, K18, K19, \
-K20, K21, K22, K23, K24,           K25, K26, K27, K28, K29, \
-N30, N31, K32, K33, K34,           K35, K36, K37, N38, N39 \
-) \
-K00  K01  K02  K03  K04  &kp T  XXX  K05  K06  K07  K08  K09 \
-K10  K11  K12  K13  K14  &kp G  XXX  K15  K16  K17  K18  K19 \
-K20  K21  K22  K23  K24  &kp B  XXX  K25  K26  K27  K28  K29 \
-          XXX  K32  K33  K34    K35  K36  K37  XXX
-
-#define MIRYOKU_LAYERMAPPING_TAP(\
-K00, K01, K02, K03, K04,           K05, K06, K07, K08, K09, \
-K10, K11, K12, K13, K14,           K15, K16, K17, K18, K19, \
-K20, K21, K22, K23, K24,           K25, K26, K27, K28, K29, \
-N30, N31, K32, K33, K34,           K35, K36, K37, N38, N39 \
-) \
-K00  K01  K02  K03  K04  &kp NUM_8  XXX  K05  K06  K07  K08  K09 \
-K10  K11  K12  K13  K14  &kp NUM_9  XXX  K15  K16  K17  K18  K19 \
-K20  K21  K22  K23  K24  &kp NUM_0  XXX  K25  K26  K27  K28  K29 \
-          XXX  K32  K33  K34        K35  K36  K37  XXX
-#endif
+#define U_BASE       0
+#define U_EXTRA      1
+#define U_TAP        2
+#define U_BUTTON     3
+#define U_NAV        4
+#define U_MOUSE      5
+#define U_MEDIA      6
+#define U_NUM        7
+#define U_SYM        8
+#define U_FUN        9
+#define U_CUSTOM     10
+#define U_FFXIV_ACT1 11
+#define U_FFXIV_ACT2 12
