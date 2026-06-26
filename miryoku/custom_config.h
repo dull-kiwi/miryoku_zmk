@@ -3,10 +3,10 @@
 
 // final fantasy layers ============================================================================================================================================================================
 #define MIRYOKU_LAYER_CUSTOM \
-&kp Q,             &kp W,             &kp F,             &kp P,                                &kp B,                                &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,   \
-&kp A,             &kp R,             &kp S,             &kp T,                                &kp G,                                &kp M,             &kp N,             &kp E,             &kp I,             &kp O,     \
-&kp Z,             &kp X,             &kp C,             &kp D,                                &kp V,                                &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH, \
-U_NP,              U_NP,              &kp ESC,           U_LT(U_FFXIV_ACT1, SPACE),            U_LT(U_FFXIV_ACT2, SPACE),           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+&kp Q,             &kp W,             &kp F,                             &kp P,                                &kp B,                                &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,   \
+&kp A,             &kp R,             &kp S,                             &kp T,                                &kp G,                                &kp M,             &kp N,             &kp E,             &kp I,             &kp O,     \
+&kp Z,             &kp X,             &kp C,                             &kp D,                                &kp V,                                &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH, \
+U_NP,              U_NP,              U_LT(U_FFXIV_ACT3, ESC),           U_LT(U_FFXIV_ACT1, SPACE),            U_LT(U_FFXIV_ACT2, SPACE),            U_MT(LCTRL, RET), &kp BSPC,          &kp DEL,           U_NP,              U_NP
 #define MIRYOKU_LAYERMAPPING_CUSTOM MIRYOKU_MAPPING
 
 #define MIRYOKU_LAYER_FFXIV_ACT1 \
@@ -22,6 +22,20 @@ U_NP,              U_NP,              &kp ESC,           U_LT(U_FFXIV_ACT1, SPAC
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp EXCL,          &kp AT,            &kp HASH,          &kp TILDE, \
 &trans,            &trans,            &trans,            U_NP,              &trans,            &trans,            &trans,            &trans,            &trans,            &trans
 #define MIRYOKU_LAYERMAPPING_FFXIV_ACT2 MIRYOKU_MAPPING
+
+#define MIRYOKU_LAYER_FFXIV_ACT3 \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp F13,           &kp F14,           &kp F15,           &kp F16,  \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp F17,           &kp F18,           &kp F19,           &kp F20,  \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp F21,           &kp F22,           &kp F23,           &kp F24,  \
+&trans,            &trans,            &trans,            U_NP,              U_NP,              &trans,            &trans,            &trans,            &trans,            &trans
+#define MIRYOKU_LAYERMAPPING_FFXIV_ACT3 MIRYOKU_MAPPING
+
+#define MIRYOKU_LAYER_PARTY_LIST \
+&trans,            &kp F7,            &kp F8,            &kp F9,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
+&trans,            &kp F4,            &kp F5,            &kp F6,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
+&trans,            &kp F1,            &kp F2,            &kp F3,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
+#define MIRYOKU_LAYERMAPPING_PARTY_LIST MIRYOKU_MAPPING
 // final fantasy layers ============================================================================================================================================================================
 
 #define MIRYOKU_LAYER_EXTRA \
@@ -62,7 +76,9 @@ MIRYOKU_X(SYM,      "Sym") \
 MIRYOKU_X(FUN,      "Fun") \
 MIRYOKU_X(CUSTOM,   "FFXIV") \
 MIRYOKU_X(FFXIV_ACT1, "FFXIV Act1") \
-MIRYOKU_X(FFXIV_ACT2, "FFXIV Act2")
+MIRYOKU_X(FFXIV_ACT2, "FFXIV Act2") \
+MIRYOKU_X(FFXIV_ACT3, "FFXIV Act3") \
+MIRYOKU_X(PARTY_LIST, "Party List")
 
 #define U_BASE       0
 #define U_EXTRA      1
@@ -77,3 +93,5 @@ MIRYOKU_X(FFXIV_ACT2, "FFXIV Act2")
 #define U_CUSTOM     10
 #define U_FFXIV_ACT1 11
 #define U_FFXIV_ACT2 12
+#define U_FFXIV_ACT3 13
+#define U_PARTY_LIST 14
