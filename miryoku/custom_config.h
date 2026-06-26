@@ -37,14 +37,14 @@ U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo 
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
-U_NA,              &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,             \
+&u_to_U_CUSTOM,    &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         U_NA,              \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              &kp PG_DN,         &kp PG_UP,         &kp HOME,          &kp END,           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp INS,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 // todo: approach to switching into the ffxiv "custom" layer via mouse layer top-left key
 #define MIRYOKU_ALTERNATIVES_MOUSE \
-&to U_CUSTOM,      &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MS_D,            U_MS_R,            U_CPY,             U_CUT,             U_UND,             \
+&u_to_U_CUSTOM,    &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MS_D,            U_MS_R,            U_CPY,             U_CUT,             U_UND,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_NA,              U_NA,              U_NA,              U_NA,            \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_MS_U,            U_MS_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
