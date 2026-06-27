@@ -51,11 +51,10 @@ U_NP,              U_NP,              &mo U_TAP2,        &kp SPC,           &mo 
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_TAP2 \
-&kp ESC,           &kp NUM_1,         &trans,            &kp NUM_2,         &kp NUM_5,          &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
-&kp LSHFT,         &trans,            &trans,            &trans,            &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
-&kp LCTRL,         &kp NUM_3,         &kp X,             &kp NUM_4,         &kp NUM_7,          &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
+&kp ESC,           &kp NUM_8,         &trans,            &kp NUM_9,         &kp B,              &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
+&kp LSHFT,         &trans,            &trans,            &trans,            &kp G,              &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
+&kp LCTRL,         &kp NUM_0,         &kp X,             &kp MINUS,         &kp M,              &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
-
 #define MIRYOKU_LAYERMAPPING_TAP2 MIRYOKU_MAPPING
 
 #define MIRYOKU_LAYER_NAV \
