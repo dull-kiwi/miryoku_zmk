@@ -46,7 +46,7 @@ U_NP,              U_NP,              &mo U_TAP2,        &kp SPC,           &mo 
 
 #define MIRYOKU_LAYER_TAP \
 &kp ESC,           &kp NUM_1,         &trans,            &kp NUM_2,         &kp NUM_5,          &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
-&kp LSHFT,         &tras,             &trans,            &trans,            &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
+&kp LSHFT,         &trans,            &trans,            &trans,            &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
 &kp LCTRL,         &kp NUM_3,         &kp X,             &kp NUM_4,         &kp NUM_7,          &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
