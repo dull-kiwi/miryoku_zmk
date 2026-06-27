@@ -3,10 +3,10 @@
 
 // final fantasy layers ============================================================================================================================================================================
 #define MIRYOKU_LAYER_CUSTOM \
-&kp Q,             &kp W,             &kp F,                      &kp P,                        &kp B,                         &kp J,             &kp L,                       &kp U,             &kp Y,             &kp SQT,   \
-&kp A,             &kp R,             &kp S,                      &kp T,                        &kp G,                         &kp M,             &kp N,                       &kp E,             &kp I,             &kp O,     \
-&kp Z,             &kp X,             &kp C,                      &kp D,                        &kp V,                         &kp K,             &kp H,                       &kp COMMA,         &kp DOT,           &kp SLASH, \
-U_NP,              U_NP,              U_LT(U_FFXIV_ACT3, ESC),    U_LT(U_FFXIV_ACT1, SPACE),    U_LT(U_FFXIV_ACT2, SPACE),     U_MT(LCTRL, RET),  U_LT(U_PARTY_LIST, BSPC),    &kp DEL,           U_NP,              U_NP
+&kp Q,             &kp W,             &kp F,                      &kp P,                        &kp B,                       &kp J,             &kp L,                       &kp U,             &kp Y,             &kp SQT,   \
+&kp A,             &kp R,             &kp S,                      &kp T,                        &kp G,                       &kp M,             &kp N,                       &kp E,             &kp I,             &kp O,     \
+&kp Z,             &kp X,             &kp C,                      &kp D,                        &kp V,                       &kp K,             &kp H,                       &kp COMMA,         &kp DOT,           &kp SLASH, \
+U_NP,              U_NP,              U_LT(U_FFXIV_ACT3, ESC),    U_LT(U_FFXIV_ACT1, SPACE),    U_LT(U_FFXIV_ACT2, TAB),     U_MT(LCTRL, RET),  U_LT(U_PARTY_LIST, BSPC),    &kp DEL,           U_NP,              U_NP
 #define MIRYOKU_LAYERMAPPING_CUSTOM MIRYOKU_MAPPING
 
 #define MIRYOKU_LAYER_FFXIV_ACT1 \
@@ -33,8 +33,8 @@ U_NP,              U_NP,              U_LT(U_FFXIV_ACT3, ESC),    U_LT(U_FFXIV_A
 #define MIRYOKU_LAYER_PARTY_LIST \
 &trans,            &kp F7,            &kp F8,            &kp F9,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
 &trans,            &kp F4,            &kp F5,            &kp F6,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
-&trans,            &kp F1,            &kp F2,            &kp F3,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
-&u_to_U_BASE,      &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
+&u_to_U_BASE,      &kp F1,            &kp F2,            &kp F3,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,  \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
 #define MIRYOKU_LAYERMAPPING_PARTY_LIST MIRYOKU_MAPPING
 // final fantasy layers ============================================================================================================================================================================
 
@@ -42,17 +42,25 @@ U_NP,              U_NP,              U_LT(U_FFXIV_ACT3, ESC),    U_LT(U_FFXIV_A
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo U_TAP,         &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              &mo U_TAP2,        &kp SPC,           &mo U_TAP,         &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_TAP \
-&kp ESC,           &kp NUM_1,         &kp W,             &kp NUM_2,         &kp NUM_5,          &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
-&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
+&kp ESC,           &kp NUM_1,         &trans,            &kp NUM_2,         &kp NUM_5,          &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
+&kp LSHFT,         &tras,             &trans,            &trans,            &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
 &kp LCTRL,         &kp NUM_3,         &kp X,             &kp NUM_4,         &kp NUM_7,          &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
 U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
+#define MIRYOKU_LAYER_TAP2 \
+&kp ESC,           &kp NUM_1,         &trans,            &kp NUM_2,         &kp NUM_5,          &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
+&kp LSHFT,         &trans,            &trans,            &trans,            &kp NUM_6,          &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
+&kp LCTRL,         &kp NUM_3,         &kp X,             &kp NUM_4,         &kp NUM_7,          &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
+U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+
+#define MIRYOKU_LAYERMAPPING_TAP2 MIRYOKU_MAPPING
+
 #define MIRYOKU_LAYER_NAV \
-&u_to_U_CUSTOM,    &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_caps_word,      U_NA,              U_NA,              U_NA,              U_NA,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         U_NA,              \
+&u_to_U_CUSTOM,    &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NA,      U_NA,              U_NA,              U_NA,              U_NA,             \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,              \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              &kp PG_DN,         &kp PG_UP,         &kp HOME,          &kp END,           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp INS,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
@@ -67,6 +75,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 MIRYOKU_X(BASE,     "Base") \
 MIRYOKU_X(EXTRA,    "Extra") \
 MIRYOKU_X(TAP,      "Tap") \
+MIRYOKU_X(TAP2,     "Tap2") \
 MIRYOKU_X(BUTTON,   "Button") \
 MIRYOKU_X(NAV,      "Nav") \
 MIRYOKU_X(MOUSE,    "Mouse") \
@@ -95,3 +104,4 @@ MIRYOKU_X(PARTY_LIST, "Party List")
 #define U_FFXIV_ACT2 12
 #define U_FFXIV_ACT3 13
 #define U_PARTY_LIST 14
+#define U_TAP2       15
